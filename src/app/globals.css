@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: #0f172a;
+  --color-foreground: #e2e8f0;
+  --color-primary: #5eead4;
+  --color-secondary: #94a3b8;
+  --color-slate-800: #1e293b;
+  --color-slate-700: #334155;
+  --font-sans: var(--font-josefin);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background-color: rgba(94, 234, 212, 0.3);
+  color: #e2e8f0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 4px;
+}
+
+/* Section scroll margin */
+section {
+  scroll-margin-top: 96px;
+}
+
+/* Mouse gradient effect */
+.mouse-gradient {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  transition: background 0.3s;
+}
+
+/* Experience/Project card hover */
+.group-card {
+  transition: all 0.2s ease;
+}
+
+.group-card:hover {
+  background: rgba(30, 41, 59, 0.5);
+  box-shadow: inset 0 1px 0 0 rgba(148, 163, 184, 0.1);
+}
+
+/* Nav link active indicator */
+.nav-indicator {
+  width: 32px;
+  height: 1px;
+  background: #64748b;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover .nav-indicator,
+.nav-link.active .nav-indicator {
+  width: 64px;
+  background: #e2e8f0;
+}
+
+.nav-link:hover .nav-text,
+.nav-link.active .nav-text {
+  color: #e2e8f0;
+}
+
+/* Experience/Project card hover effect */
+.card-hover {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.card-hover::before {
+  content: '';
+  position: absolute;
+  inset: -16px -24px;
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.2s ease;
+  z-index: -1;
+}
+
+.card-hover:hover::before {
+  background: rgba(30, 41, 59, 0.5);
+  box-shadow: inset 0 1px 0 0 rgba(148, 163, 184, 0.1);
+}
+
+/* List dimming effect on hover */
+.hover-list > *:hover ~ *,
+.hover-list > *:has(~ *:hover) {
+  opacity: 0.5;
+}
+
+.hover-list > *:hover {
+  opacity: 1 !important;
 }
