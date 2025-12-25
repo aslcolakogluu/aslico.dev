@@ -7,7 +7,7 @@ export const personalInfo = {
   name: "Aslı Çolakoğlu",
   title: "Software Engineering Student",
   tagline: "Building user-centered, accessible, and performant digital experiences.",
-  email: "asli@example.com",
+  email: "colakogluasli2@gmail.com",
 };
 
 export const socialLinks = {
@@ -62,39 +62,48 @@ export const experiences = [
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Hangman Game",
     description:
-      "A full-stack e-commerce application featuring product management, shopping cart functionality, Stripe payment integration, and an admin dashboard for inventory management.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redis"],
-    githubUrl: "https://github.com/aslicolakoglu/ecommerce",
-    liveUrl: "https://ecommerce-demo.vercel.app",
+      "A classic Hangman (Adam Asmaca) game where players guess letters to reveal a hidden word. The game tracks incorrect guesses, remaining attempts, and determines win or loss conditions with an interactive user experience.",
+    technologies: ["C#", ".NET", "Console Application"],
+    githubUrl: "https://github.com/aslcolakogluu/Hang-Man-wtih-CSharp",
+    liveUrl: "",
     image: null,
   },
   {
-    title: "Task Management App",
+    title: "Library App",
     description:
-      "A Kanban-style task management application with drag-and-drop functionality, team collaboration features, real-time updates, and notification system.",
-    technologies: ["Next.js", "Prisma", "PostgreSQL", "Socket.io", "Tailwind"],
-    githubUrl: "https://github.com/aslicolakoglu/taskmanager",
-    liveUrl: "https://taskmanager-demo.vercel.app",
+      "A library management application developed in C# that allows users to add, update, delete, and list books. The system manages book availability, borrowing and returning operations, and provides a structured way to track library resources.",
+    technologies: ["C#", ".NET", "Console Application"],
+    githubUrl: "https://github.com/aslcolakogluu/Library-App",
+    liveUrl: "",
     image: null,
   },
   {
-    title: "Weather Dashboard",
+    title: "Cute Date - A Playful Dating App",
     description:
-      "A weather dashboard displaying real-time weather data using OpenWeather API. Features location-based forecasts, interactive maps, and 7-day predictions.",
-    technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Mapbox"],
-    githubUrl: "https://github.com/aslicolakoglu/weather-app",
-    liveUrl: "https://weather-demo.vercel.app",
+      "A cute and responsive date-themed website designed using HTML and CSS. The project focuses on aesthetic design, smooth layout, and creative visual elements to create a romantic and playful user experience.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/aslcolakogluu/Cute-Date-Website",
+    liveUrl: "",
     image: null,
   },
   {
-    title: "ML Image Classifier",
+    title: "SAT with Python",
     description:
-      "A machine learning project for image classification using TensorFlow. Trained on custom dataset with 95% accuracy. Includes web interface for real-time predictions.",
-    technologies: ["Python", "TensorFlow", "Flask", "OpenCV"],
-    githubUrl: "https://github.com/aslicolakoglu/ml-classifier",
-    liveUrl: "https://ml-demo.vercel.app",
+      "A Python-based project that solves SAT (Boolean Satisfiability) problems by parsing logical expressions and applying algorithmic techniques to determine satisfiability.",
+    technologies: ["Python", "Algorithms", "Logic"],
+    githubUrl: "https://github.com/aslcolakogluu/SAT-with-Python",
+    liveUrl: "",
+    image: null,
+  },
+    {
+    title: "Company - Specific Website Design",
+    description:
+      "A custom website design project created based on a specific company's needs and branding. The project focuses on clean UI design, layout structuring, and responsive web design principles.",
+    technologies: ["HTML", "CSS", "UI/UX Design"],
+    githubUrl: "https://github.com/aslcolakogluu/Business-Website",
+    liveUrl: "",
     image: null,
   },
 ];

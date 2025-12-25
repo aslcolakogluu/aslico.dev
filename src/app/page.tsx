@@ -226,7 +226,7 @@ export default function Home() {
                 </ol>
                 <div className="mt-12">
                   <a
-                    href="/cv.pdf"
+                    href="/Aslı Çolakoğlu CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group inline-flex items-center font-medium leading-tight text-foreground hover:text-primary"
